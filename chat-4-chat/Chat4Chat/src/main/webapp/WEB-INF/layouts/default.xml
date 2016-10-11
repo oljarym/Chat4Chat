@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="chat4chat" template="/WEB-INF/templates/default.jsp">
+        <put-attribute name="title" value="Title"/>
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp"/>
+        <put-attribute name="body"/>
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp"/>
+    </definition>
+    <definition name="home" extends="chat4chat">
+        <put-attribute name="title" value="CHAT4CHAT"/>
+        <put-attribute name="body" value="/WEB-INF/views/home.jsp"/>
+    </definition>
+    <definition name="personalRoom" extends="chat4chat">
+        <put-attribute name="title" value="Personal Room"/>
+        <put-attribute name="body" value="/WEB-INF/views/personalRoom.jsp"/>
+    </definition>
+    <definition name="login" extends="chat4chat">
+        <put-attribute name="title" value="Login"/>
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp"/>
+    </definition>
+    <definition name="register" extends="chat4chat">
+        <put-attribute name="title" value="Register Page"/>
+        <put-attribute name="body" value="/WEB-INF/views/register.jsp"/>
+    </definition>
+
+
+</tiles-definitions>
